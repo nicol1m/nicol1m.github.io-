@@ -1,0 +1,33 @@
+.title-container {
+    position: absolute;
+    top: calc(50% - 200px); /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px; /* Keep or adjust the font size as needed */
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dog-wrapper {
+    margin-top: 20px; /* Adjust the top margin to create space between title and dog head */
+}
+
+.dog-head {
+    width: 500px; /* Keep the size of the dog head */
+    transition: transform 0.5s ease; /* Smooth transition for the spinning effect */
+    filter: drop-shadow(0 0 10px rgb(25, 0, 255)); /* Blue outer glow effect */
+}
