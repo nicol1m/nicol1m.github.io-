@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡♡ ENYAWEB ♡♡</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <style>
+
+      /* CSS for flexbox navbar */
+      body, html {
+          margin: 0; /* Remove default margin */
+          padding: 0; /* Remove default padding */
+          font-family: Helvetica, Arial, sans-serif; /* Use Helvetica font */
+      }
+
+      .navbar {
+          background-color: #aa32ff;
+          padding: 10px;
+          margin: 0; /* Set margin to 0 */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+      }
+
+      .navbar-text {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none; /* Remove default underline */
+        }
+
+      .navbar-text:hover {
+          text-decoration: underline; /* Underline on hover */
+      }
+
+      /* CSS for title container */
+      .title-container {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      /* CSS for title text */
+      .title {
+          font-size: 18px;
+          color: #aa32ff;
+      }
+
+      /* CSS for table of contents */
+      .toc {
+          background-color: #ffffff; /* Changed to purple */
+          padding: 10px;
+          margin-top: 0px;
+          color: #aa32ff;
+          
+      }
+
+      .toc ul {
+          list-style: none;
+          padding: 0;
+          
+      }
+
+      .toc ul li {
+          margin-bottom: 10px;
+          
+      }
+
+      .toc ul li a {
+          text-decoration: none;
+          color: #0d00ff; /* Changed to white */
+          display: block;
+          padding: 5px;
+          
+      }
+
+      .toc ul li a:hover {
+    box-shadow: 0 0 10px #aa32ff; /* Green outer glow */
+}
+
+      /* CSS for main content */
+      main {
+          padding: 20px;
+          color: #aa32ff; /* Changed to purple */
+      }
+
+      /* CSS for ticker tape */
+      .ticker-tape {
+
+          color: #ff00d4;
+          padding: 5px;
+          text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
+          position: fixed;
+          width: 100%;
+          animation: scroll 20s linear infinite; /* Changed to infinite */
+          margin-top: 50px;
+      }
+
+      @keyframes scroll {
+          0% {
+              transform: translateX(100%);
+          }
+          100% {
+              transform: translateX(-100%);
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="ticker-tape">
+        ♡♡ CLICK ON ENYAWEB TO GO HOME ♡♡
+    </div>
+
+    <div class="navbar">
+        <a href="/" class="navbar-text">enyaweb</a>
+    </div>
+
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">🤫 Introduction</a></li>
+            <li><a href="#feeding">🍛 Feeding</a></li>
+            <li><a href="#training">🐕 Training</a></li>
+            <li><a href="#exercise">🏋️ Exercise</a></li>
+            <li><a href="#grooming">💇 Grooming</a></li>
+            <li><a href="#healthcare">🍎 Healthcare</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="introduction">
+            <h2>🤫 Introduction</h2>
+            <p>Welcome to <b>ENYAWEB</b>, your guide to watching and getting along with enya. Here are some instructions on what to do when you're handling, taking care or simply just chilling out with Enya.</p>
+        </section>
+
+        <section id="feeding">
+            <h2>🍛 Feeding</h2>
+            <p>Proper nutrition is crucial for Enya's health and well-being.</p>
+            <p>Feeding times and tips:</p>
+            <ul>
+                <li>Twice a day</li>
+                <li>11:00 - 1 bowl</li>
+                <li>23:00 - 1 bowl</li>
+                <li>Only feed dry food, incase it runs out do not get wet food</li>
+                <li>Provide fresh water at all times</li>
+            </ul>
+        </section>
+
+        <section id="training">
+            <h2>🐕 Training</h2>
+            <p>Enya has been trained to respond to certain cues, commands and movements</p>
+            <p>Key training tips:</p>
+            <ul>
+                <li>Use positive reinforcement techniques, saying "YES!" and "GREAT JOB!" in  a positive voice and manner is essential</li>
+                <li>Be patient and consistent, give praise and treats freely and often</li>
+                <li>Commands Enya knows are "SIT", "HI-FIVE", "UPPIES" </li>
+            </ul>
+        </section>
+
+        <section id="exercise">
+            <h2>🏋️ Exercise</h2>
+            <p>Regular exercise is vital for your dog's physical and mental health. Engage your dog in daily activities to prevent obesity and boredom.</p>
+            <p>Recommended exercises include:</p>
+            <ul>
+                <li>Walking</li>
+                <li>Running</li>
+                <li>Playing fetch</li>
+                <li>Agility training</li>
+            </ul>
+        </section>
+
+        <section id="grooming">
+            <h2>💇 Grooming</h2>
+            <p>Regular grooming helps maintain your dog's coat and skin health. Depending on your dog's breed and coat type, grooming requirements may vary.</p>
+            <p>Key grooming tasks:</p>
+            <ul>
+                <li>Brushing</li>
+                <li>Bathing</li>
+                <li>Trimming nails</li>
+                <li>Cleaning ears</li>
+            </ul>
+        </section>
+
+        <section id="healthcare">
+            <h2>🍎 Healthcare</h2>
+            <p>Regular veterinary care is essential for your dog's overall health and well-being. Schedule routine check-ups and vaccinations to prevent health problems.</p>
+            <p>Common healthcare considerations:</p>
+            <ul>
+                <li>Vaccinations</li>
+                <li>Parasite control</li>
+                <li>Dental care</li>
+                <li>Emergency preparedness</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
