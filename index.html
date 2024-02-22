@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡♡ ENYAWEB ♡♡</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for flexbox navbar */
+        body, html {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .navbar {
+            background-color: #aa32ff;
+            padding: 10px;
+            margin: 0; /* Set margin to 0 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar-text {
+            color: #fff;
+            font-family: Helvetica, Arial, sans-serif; /* Change font-family to Helvetica */
+            font-size: 24px;
+            text-decoration: none; /* Remove default underline */
+        }
+
+        .navbar-text:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* CSS for the title container */
+        .title-container {
+            text-align: center;
+            margin-top: -50px;
+        }
+
+        /* CSS for the title text */
+        .title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            color: #aa32ff; /* Match the color with the navbar */
+            animation: floatText 5s infinite alternate; /* Apply animation to the text */
+        }
+
+        /* Keyframes for the text animation */
+        @keyframes floatText {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* CSS for the dog head animation */
+        .dog-head {
+            animation: floatHead 5s infinite alternate; /* Apply animation to the dog head */
+        }
+
+        /* Keyframes for the dog head animation */
+        @keyframes floatHead {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* CSS for the footer */
+        .footer {
+            background-color: #ffffff; /* Set the background color to purple */
+            color: #ff00c8; /* Set the text color to white */
+            font-family: Helvetica, Arial, sans-serif; /* Set the font-family to Helvetica */
+            padding: 5px; /* Add some padding */
+            text-align: center; /* Center-align the text */
+            position: fixed; /* Fix the footer to the bottom of the viewport */
+            width: 100%; /* Make the footer span the full width */
+            bottom: 0; /* Position the footer at the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="navbar-text">enyaweb</a>
+    </div>
+    <div class="title-container">
+        <div class="title" id="page-title">
+            <h1>Navigate the page using the eyes of Enya.</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="dog-wrapper">
+            <img src="dog_head.png" class="dog-head" usemap="#dogmap">
+        </div>
+        <map name="dogmap">
+            <area shape="circle" coords="175,225,25" href="/about" id="left-eye">
+            <area shape="circle" coords="325,225,25" href="/contact" id="right-eye">
+        </map>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>♡♡ COPYRIGHT @ NAOKI ♡♡</p>
+    </div>
+</body>
+</html>
